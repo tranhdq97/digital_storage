@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-[#f0f2f5];
+    }
+}
+
+@layer components {
+    .sidebar-items--large {
+        @apply mx-[16px] text-[14px] font-medium text-zinc-300 leading-[40px] cursor-pointer  py-[4px] overflow-hidden truncate;
+    }
+
+    .sidebar-items--small {
+        @apply mx-[8px] text-[16px] font-medium text-zinc-300 leading-[40px] cursor-pointer  py-[4px] overflow-hidden truncate;
+    }
+    .sidebar-items--active {
+        @apply bg-[#6f6f6f] rounded-[8px];
+    }
+    .sidebar-items:hover {
+        @apply bg-[#b9b9b9] !important;
+    }
+
+    .after-form {
+        @apply after:content-['(*)'] after:text-[#f00] after:pl-[4px] after:text-[10px];
+    }
+
+    .bar-page-input {
+        @apply text-[12px] w-full outline-none px-[12px] py-[6px] truncate h-[32px] bg-white;
+    }
+
+    .bar-page-button {
+        @apply w-full flex justify-center bg-[#00f] py-[6px] text-[14px];
+    }
+
+    .toggle-side-bar-button:hover {
+        @apply text-white !important;
+    }
+}
+
+/* loading animation */
+.ant-form-item-label {
+    text-align: left !important;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #ccc;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #ccc transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bar-page-input > .ant-select-selector {
+    height: 100% !important;
+    font-size: 12px !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.ant-select-selector {
+    border-radius: 0px !important;
+}
+.ant-select-selection-search-input {
+    height: 100% !important;
+}
+
+.ant-select-selection-placeholder {
+    font-size: 13px !important;
+    list-style: 100% !important;
+}
+
+.ant-select-selection-item {
+    padding-left: 10px;
+}
+
+#react-confirm-alert {
+    z-index: 500;
+    position: fixed;
+}
+
+.ant-popconfirm-description {
+    font-size: 12px !important;
+}
+
+.ant-popconfirm-buttons > .ant-btn-primary {
+    background-color: #1677ff !important;
+}
+
+.ant-btn-primary {
+    background-color: #1677ff !important;
+}
+
+.ant-popconfirm-buttons > button {
+    font-size: 12px !important;
+}
+
+.ant-btn {
+    /* background-color: green !important; */
+}
+
+
+.icon-button {
+    background-color: inherit !important;
+    box-shadow: none;
+}
+
+.custom-btn-search {
+    @apply font-medium text-black bg-yellow-300 hover:bg-yellow-400 !important;
+}
+
+.custom-btn-clear-filter {
+    @apply font-medium text-black bg-red-300 hover:bg-red-400 !important;
+}
+
+.custom-btn-add-file {
+    @apply font-medium text-black bg-cyan-300 hover:bg-cyan-400 !important;
+}
+
+.custom-btn-export-excel {
+    @apply font-medium text-black bg-green-300 hover:bg-green-500 !important;
+}
+
+.custom-btn-show-action {
+    @apply font-medium text-black bg-purple-300 hover:bg-purple-400 !important;
+}
+
+.ant-input-search-button {
+    background-color: #00f !important;
+    display: flex;
+    align-items: center;
+}
+
+.ant-modal-close {
+    top: 0 !important;
+    right: 0 !important;
+    color: white !important;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+}
+
+.ant-modal-title {
+    color: white !important;
+}
+
+.ant-modal-header {
+    display: flex;
+    align-items: center;
+    background-color: #00f !important;
+    width: 100%;
+    height: 40px;
+    padding: 24px;
+}
+
+.ant-modal-content {
+    padding: 0 !important;
+}
+
+.ant-modal-body {
+    padding: 12px 24px;
+}
+
+.ant-btn.css-dev-only-do-not-override-1fviqcj.ant-btn-primary {
+    background-color: #00f;
+    color: white;
+}
+
+.ant-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    padding-bottom: 16px;
+}
+
+.text-wrap-normal {
+    white-space: normal;
+    text-wrap: wrap;
+}
